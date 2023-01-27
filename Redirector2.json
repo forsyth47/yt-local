@@ -1,0 +1,23 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2022-12-11T00:13:26.118Z",
+    "redirects": [
+        {
+            "description": "Redirect Youtube To My Youtube Front End",
+            "exampleUrl": "https://www.youtube.com/watch?v=sLJyFEmveks",
+            "exampleResult": "http://127.0.0.1:9010/https://www.youtube.com/watch?v=sLJyFEmveks",
+            "error": null,
+            "includePattern": "^(https?://(?:[a-zA-Z0-9_-]*\\.)?(?:youtube\\.com|youtu\\.be|youtube-nocookie\\.com)/.*)",
+            "excludePattern": "",
+            "patternDesc": "All Youtube URLS",
+            "redirectUrl": "https://127.0.0.1:9010/$1",
+            "patternType": "R",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame"
+            ]
+        }
+    ]
+}
