@@ -10,16 +10,16 @@ from flask import request
 SETTINGS_INFO = collections.OrderedDict([
     ('app_public', {
         'type': bool,
-        'default': False,
+        'default': True,
         'comment': '''Set app public mode, disabled by default''',
         'hidden': True,
         'category': 'network',
     }),
     ('app_url', {
         'type': str,
-        'default': 'http://localhost',
+        'default': 'http://yt-local-1.onrender.com',
         'comment': '''Set URL of app 'http://localhost' by default''',
-        'hidden': True,
+        'hidden': False,
         'category': 'network',
     }),
     ('route_tor', {
@@ -53,14 +53,14 @@ SETTINGS_INFO = collections.OrderedDict([
 
     ('port_number', {
         'type': int,
-        'default': 9010,
+        'default': 80,
         'comment': '',
         'category': 'network',
     }),
 
     ('allow_foreign_addresses', {
         'type': bool,
-        'default': False,
+        'default': True,
         'comment': '''This will allow others to connect to your YT Local instance as a website.
 For security reasons, enabling this is not recommended.''',
         'hidden': True,
@@ -69,7 +69,7 @@ For security reasons, enabling this is not recommended.''',
 
     ('allow_foreign_post_requests', {
         'type': bool,
-        'default': False,
+        'default': True,
         'comment': '''Enables requests from foreign addresses to make post requests.
 For security reasons, enabling this is not recommended.''',
         'hidden': True,
